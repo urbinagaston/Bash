@@ -1,0 +1,76 @@
+ls
+ls -lha
+clear
+pwd
+mkdir
+mkdir -p /Carpetas/recursivas/Ejemplo
+mkdir -m 700 Urbina (Con permisos)
+rmdir
+rm
+cp (Copia o cambia nombre)
+mv (Mueve o corta)
+touch (Crea archivo)
+find -name archivo_buscar
+find -perm 777
+whereis ls
+cat
+more
+less
+nano
+vi
+ps -faux
+ps -aux
+top
+kill -SIGTERM process_id (Matar proceso)
+chown (Cambio de propietario) ejemplo: sudo chown nuevo_propietario directorio
+chgrp (Cambio de grupo) ejemplo: sudo chgrp nuevo_grupo directorio
+chmod (Cambio de permisos) ejemplo sudo chmod 700 ejemplo.txt
+apt-get install
+apt-get update
+apt-get uprgade
+
+ssh usuario@direccion_ip
+ssh usuario@direccion_ip sudo apt update (Ejecutar comando de forma remota)
+sshd -T |less (Muestra configuración de ssh)
+scp urbina@192.168.0.133:prueba.txt . (Descargar un archivo desde un servidor)
+scp nombre_archivo usuario@192.168.56.50:ruta_destino (Subir un archivo al servidor)
+
+
+
+Transferir archivos por scp
+
+
+
+Ver aplicaciones instaladas
+
+dpkg --get-selections | grep open
+
+
+
+HARDWARE
+
+cat /proc/cpuinfo
+cat /prop/meminfo
+cat /prop/dma
+cat /prop/partitions
+cat /prop/interrupts
+cat /prop/ioports
+lspci
+update-pciids (Muestra todos los pci)
+setpci (Configuración pci)
+
+
+KERNEL
+
+lsmod = Ver módulos cargados en el sistema)
+insmod = Instalar un módulo
+rmmod = Remover un módulo
+
+
+USB
+
+cd /proc/bus/usb = Ruta del usb
+lsusb = Ver dispositivos usb conectados
+lsusb -t = Ver usb con mayor detalle
+df = Ver dispostivos
+sudo umount /dev/sdf1 = Expulsar usb (Sino expulsa, utilizar = killall tumblerd) 
