@@ -1,0 +1,1 @@
+Verificar la versión Debian= lsb_release -d
