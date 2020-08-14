@@ -1,0 +1,5 @@
+Ubuntu
+
+add-apt-repository ppa:gezakovacs/ppa &&
+apt-get update -y &&
+apte-get install unetbootin -y
