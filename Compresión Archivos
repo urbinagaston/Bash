@@ -1,1 +1,2 @@
+mv -v *archivos* destino
 gzip *
