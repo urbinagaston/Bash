@@ -1,5 +1,8 @@
 find /mnt/pruebaRaid/backupGestion/ -type f -mtime +7 (Para buscar "sólo archivos" con más de 7 días de antigüedad)
 find /mnt/pruebaRaid/backupGestion/ -type f -mtime +7 -exec rm {} \;
 
+find /sourcedirectory -type f -mtime +365 -exec mv "{}" /destination/directory/ \;
+
+
 mv -v *archivos* destino
 gzip *
