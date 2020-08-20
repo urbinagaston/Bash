@@ -1,0 +1,12 @@
+Ubuntu 16.04
+
+apt-get update -y &&
+apt-get upgrade -y &&
+apt install software-properties-common -y &&
+sudo apt-get install openjdk-8-jdk -y &&
+echo "JAVA_HOME=$(which java)" | sudo tee -a /etc/environment
+source /etc/environment
+echo $JAVA_HOME
+wget https://dl.ui.com/aircontrol2/aircontrol-v2.1-180316-1259-unix64.bin
+chmod u+x aircontrol-v2.1-180316-1259-unix64.bin 
+sudo ./aircontrol-v2.1-180316-1259-unix64.bin
