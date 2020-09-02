@@ -1,0 +1,31 @@
+en
+config
+
+1) Configurar ftp
+
+ftp set (Ingresar usuario y contraseña)
+
+
+2) Configurar file-server
+
+
+  OLT-Decimo(config)#file-server auto-backup configuration primary 172.27.1.10 ftp path  /mnt/pruebaRaid/backupOlt user
+  User Name(<=40 chars):fibra_ftp
+  User Password(<=40 chars):
+  
+  OLT-Decimo(config)#file-server auto-backup data primary 172.27.1.10 ftp path /mnt/pruebaRaid/backupOlt user
+  User Name(<=40 chars):fibra_ftp
+  User Password(<=40 chars):
+
+
+3) Configurar auto-backup
+
+
+auto-backup period data interval 1 time 00:30
+auto-backup period configuration interval 1 time 01:00
+
+
+4) Habilitar auto-backup period data enable
+
+auto-backup period data enable
+auto-backup period configuration enable
