@@ -225,6 +225,8 @@ lsusb = Ver dispositivos usb conectados
 lsusb -t = Ver usb con mayor detalle
 df = Ver dispostivos
 sudo umount /dev/sdf1 = Expulsar usb (Sino expulsa, utilizar = killall tumblerd) 
+lsblk
+sudo dd bs=4M if=nombre.iso of=/dev/sdb && sync
 
 
 ARRANQUE
