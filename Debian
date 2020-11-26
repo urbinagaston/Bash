@@ -1,6 +1,11 @@
-Verificar la versión Debian= lsb_release -d
+-Verificar la versión Debian= lsb_release -d
 Modificar repositorio = sudo nano /etc/apt/sources.list
 
+-Cambiar nombre del equipo
 
-Instalar php5 en Debian Buster
+nmcli general hostname test y además modificar el archivo /etc/hostname
+
+
+
+-Instalar php5 en Debian Buster
 https://tutorialforlinux.com/2018/06/05/how-to-add-php-5-6-repository-for-debian-based-oses/
