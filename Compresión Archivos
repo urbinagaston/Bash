@@ -1,4 +1,6 @@
-find /mnt/pruebaRaid/backupGestion/ -type f -mtime +7 (Para buscar "sólo archivos" con más de 7 días de antigüedad)
+chmod a+x backupGestion.sh 
+0 2 * * * root /root/backupgestion.sh
+
 find /mnt/pruebaRaid/backupGestion/ -type f -mtime +7 -exec rm {} \;
 
 find /sourcedirectory -type f -mtime +365 -exec mv "{}" /destination/directory/ \;
