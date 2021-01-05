@@ -1,0 +1,5 @@
+
+Listar reglas enumeradas = iptables -t nat -L POSTROUTING --line-numbers 
+Eliminar regla POSTROUTING = iptables -t nat -D POSTROUTING 1
+
+
