@@ -1,5 +1,12 @@
-
+Agregar ip pùblica = 
+/sbin/iptables -t nat -I POSTROUTING -s private_ip -o eth2 -j SNAT --to public_ip
+/sbin/iptables -t nat -I PREROUTING -d public_ip -i eth2 -j DNAT --to private_ip
 Listar reglas enumeradas = iptables -t nat -L POSTROUTING --line-numbers 
 Eliminar regla POSTROUTING = iptables -t nat -D POSTROUTING 1
+
+Agregar una ip con loopback
+ifconfig lo:19 IP public_ip netmask 255.255.255.255 up
+
+
 
 
