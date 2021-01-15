@@ -7,6 +7,7 @@ Eliminar regla POSTROUTING = iptables -t nat -D POSTROUTING 1
 Agregar una ip con loopback
 ifconfig lo:19 IP public_ip netmask 255.255.255.255 up
 
-
+Arista
+ip route 192.0.2.128/25 198.51.100.111
 
 
