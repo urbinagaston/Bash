@@ -68,6 +68,17 @@ scp (nombre_archivo o ruta) usuario@192.168.56.50:ruta_destino (Subir un archivo
 
 
 
+ESPACIO EN DISCO
+
+df -h
+du -h
+du -hs * | sort -nr | head -5
+du -sm * | sort -nr | head -5
+
+
+
+
+
 GESTION DE PROCESOS
 
 ps = Muestra el estado de los procesos
