@@ -5,6 +5,9 @@ find /mnt/pruebaRaid/backupGestion/ -type f -mtime +7 -exec rm {} \;
 
 find /sourcedirectory -type f -mtime +365 -exec mv "{}" /destination/directory/ \;
 
+find /disk2/nagios/var/ -type f -size +1000000k -exec rm {} \;
+
+crontab -e
 
 mv -v *archivos* destino
 gzip *
