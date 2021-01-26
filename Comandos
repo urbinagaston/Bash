@@ -1,3 +1,9 @@
+SERVICIOS UBUNTU/DEBIAN
+
+update-rc.d ssh defaults
+update-rc.d -f ssh remove
+head -n 15 /etc/init.d/apache2
+
 LISTAR FICHEROS
 
 ls = Lista archivos.
