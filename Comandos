@@ -1,3 +1,7 @@
+GITLAB
+
+gitlab-rake gitlab:env:info
+
 SERVICIOS UBUNTU/DEBIAN
 
 update-rc.d ssh defaults
