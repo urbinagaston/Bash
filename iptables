@@ -4,6 +4,11 @@ Agregar ip pùblica =
 Listar reglas enumeradas = iptables -t nat -L POSTROUTING --line-numbers 
 Eliminar regla POSTROUTING = iptables -t nat -D POSTROUTING 1
 
+Habilitar puertos
+
+iptables -t nat -I PREROUTING -d public_ip -i enp1s0f1.1750 -p udp -m multiport --dports 9000:9006 -j DNAT --to-destination private_ip
+iptables -t nat -I PREROUTING -d public_ip -i enp1s0f1.1750 -p tcp -m multiport --dports 9000:9006 -j DNAT --to-destination private_ip
+
 Agregar una ip con loopback
 ifconfig lo:19 IP public_ip netmask 255.255.255.255 up
 
