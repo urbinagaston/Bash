@@ -1,0 +1,22 @@
+apt-get install fail2ban
+
+luego copie jail.conf a jail.local
+
+cd /etc/fail2ban
+cp jail.conf jail.local
+
+editar jail.local
+buscar apache-noscript
+
+luego agrega esta línea
+
+[apache-noscript]
+enabled=true
+
+finalmente
+
+service fail2ban restart
+
+Comprobar con
+
+fail2ban-client status apache-noscript
