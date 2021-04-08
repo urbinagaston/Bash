@@ -8,7 +8,7 @@ Verficamos sintaxis de aparatos nuevos:
 /usr/local/nagios/bin/nagios -v /etc/nagios/scripts/tmp/nagios/nagios.cfg
 
 Copiamos carpeta de servicios
- /bin/cp -f /etc/nagios/scripts/tmp/nagios/servicegroups.cfg /etc/nagios/objectsservicegroups.cfg
+ /bin/cp -f /etc/nagios/scripts/tmp/nagios/servicegroups.cfg /etc/nagios/objects/servicegroups.cfg
 
 Copiamos carpeta de archivos
 /bin/cp -R /etc/nagios/scripts/tmp/nagios/nodos/* /etc/nagios/objects/nodos/
